@@ -1,0 +1,28 @@
+%h1 Listing web_cam_captures
+
+
+= headshot_default_config(Rails.application.config.session_options[:key], headshot_capture_path)
+= headshot_camera
+%br/
+%br/
+= headshot_snap_button('Shoot')
+
+
+%br
+
+
+-#%table
+-#  %tr
+-#    %th
+-#    %th
+-#    %th
+-#
+-#  - @web_cam_captures.each do |web_cam_capture|
+-#    %tr
+-#      %td= link_to 'Show', web_cam_capture
+-#      %td= link_to 'Edit', edit_web_cam_capture_path(web_cam_capture)
+-#      %td= link_to 'Destroy', web_cam_capture, :method => :delete, :data => { :confirm => 'Are you sure?' }
+-#
+-#%br
+-#
+-#= link_to 'New Web cam capture', new_web_cam_capture_path

@@ -1,0 +1,10 @@
+= form_for @web_cam_capture do |f|
+  - if @web_cam_capture.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@web_cam_capture.errors.count, "error")} prohibited this web_cam_capture from being saved:"
+      %ul
+        - @web_cam_capture.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit 'Save'

@@ -1,0 +1,2 @@
+module WebCamCapturesHelper
+end

@@ -1,4 +1,7 @@
 ToolTracker::Application.routes.draw do
+  resources :web_cam_captures
+
+  post "headshot/capture" => 'headshot#capture', :as => :headshot_capture
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
